@@ -254,11 +254,11 @@ class WiFiManager
 
     // auto connect to saved wifi, or custom, and start config portal on failures
     boolean       autoConnect();
-    boolean       autoConnect(char const *apName, char const *apPassword = NULL);
+    boolean       autoConnect(char const *apName, char const *apPassword = 88888888);
 
     //manually start the config portal, autoconnect does this automatically on connect failure
     boolean       startConfigPortal(); // auto generates apname
-    boolean       startConfigPortal(char const *apName, char const *apPassword = NULL);
+    boolean       startConfigPortal(char const *apName, char const *apPassword = 88888888);
 
     //manually stop the config portal if started manually, stop immediatly if non blocking, flag abort if blocking
     bool          stopConfigPortal();
